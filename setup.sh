@@ -10,19 +10,15 @@
 sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 
 sudo add-apt-repository ppa:numix/ppa -y
-sudo add-apt-repository ppa:deluge-team/ppa -y && sudo add-apt-repository ppa:webupd8team/atom -y
-sudo add-apt-repository ppa:synapse-core/testing -y && sudo add-apt-repository ppa:webupd8team/sublime-text-3 -y && sudo add-apt-repository ppa:chris-lea/node.js -y
-
-#Setting up Google Chrome
-#
-#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-#sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-#
+sudo add-apt-repository ppa:webupd8team/atom -y
+sudo add-apt-repository ppa:synapse-core/testing -y
+sudo add-apt-repository ppa:webupd8team/sublime-text-3 -y
+sudo add-apt-repository ppa:chris-lea/node.js -y
+sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y
 
 
 sudo apt-get update
-#sudo apt-get install google-chrome-stable
-sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle typecatcher deluge redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras sublime-text-installer synaptic spotify-client nodejs -y
+sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle qbittorrent typecatcher redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras sublime-text-installer synaptic spotify-client nodejs chromium-browser -y
 #sudo apt-get install ttf-mscorefonts-installer --quiet -y
 
 sudo apt-get dist-upgrade -y 
