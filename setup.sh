@@ -6,7 +6,7 @@
 #sudo echo "net.ipv6.conf.default.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
 #sudo echo "net.ipv6.conf.lo.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
 
-#Adding useful repositories
+# Adding useful repositories
 sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 
 sudo add-apt-repository ppa:numix/ppa -y
@@ -19,7 +19,7 @@ sudo add-apt-repository ppa:n-muench/programs-ppa -y
 
 
 sudo apt-get update
-sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle qbittorrent typecatcher redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras arduino arduino-core arduino-mk sublime-text-installer synaptic spotify-client nodejs chromium-browser typecatcher gimp calibre -y
+sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle qbittorrent typecatcher redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras arduino arduino-core arduino-mk sublime-text-installer synaptic spotify-client nodejs chromium-browser typecatcher gimp calibre audacious -y
 #sudo apt-get install ttf-mscorefonts-installer --quiet -y
 
 sudo apt-get dist-upgrade -y 
