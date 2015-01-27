@@ -40,7 +40,7 @@ git config --global alias.br 'branch'
 
 # Configuring arduino (http://stackoverflow.com/a/20593949)
 sudo chmod a+rw /dev/ttyACM0
-sudo gpasswd -a aissam dialout
+sudo gpasswd -a $(whoami) dialout
 
 
 
