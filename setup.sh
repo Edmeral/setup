@@ -1,10 +1,10 @@
 #!/bin/bash 
 
-# Disable IPv6
-#sudo echo "#disable ipv6" | sudo tee -a /etc/sysctl.conf
-#sudo echo "net.ipv6.conf.all.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
-#sudo echo "net.ipv6.conf.default.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
-#sudo echo "net.ipv6.conf.lo.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
+# Disable IPv6 (run "cat /proc/sys/net/ipv6/conf/all/disable_ipv6" to test: 1 => disabled)
+echo "#disable ipv6" | sudo tee -a /etc/sysctl.conf
+echo "net.ipv6.conf.all.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
+echo "net.ipv6.conf.default.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
+echo "net.ipv6.conf.lo.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
 
 # Adding useful repositories
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
