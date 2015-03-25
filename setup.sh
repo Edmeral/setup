@@ -21,7 +21,7 @@ sudo add-apt-repository ppa:n-muench/programs-ppa -y
 
 
 sudo apt-get update
-sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle qbittorrent typecatcher redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras arduino arduino-core arduino-mk sublime-text-installer synaptic spotify-client nodejs chromium-browser typecatcher gimp calibre audacious nautilus-open-terminal mongodb-org -y
+sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle qbittorrent typecatcher redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras arduino arduino-core arduino-mk sublime-text-installer synaptic spotify-client nodejs chromium-browser typecatcher gimp calibre audacious nautilus-open-terminal mongodb-org sox -y
 
 sudo apt-get upgrade -y 
 
