@@ -15,13 +15,12 @@ sudo add-apt-repository ppa:numix/ppa -y
 sudo add-apt-repository ppa:webupd8team/atom -y
 sudo add-apt-repository ppa:synapse-core/testing -y
 sudo add-apt-repository ppa:webupd8team/sublime-text-3 -y
-sudo add-apt-repository ppa:chris-lea/node.js -y
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y
 sudo add-apt-repository ppa:n-muench/programs-ppa -y
 
+curl -sL https://deb.nodesource.com/setup | sudo bash -
 
-sudo apt-get update
-sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle qbittorrent typecatcher redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras arduino arduino-core arduino-mk sublime-text-installer synaptic spotify-client nodejs chromium-browser typecatcher gimp calibre audacious nautilus-open-terminal mongodb-org sox -y
+sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle qbittorrent typecatcher redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras arduino arduino-core arduino-mk sublime-text-installer synaptic spotify-client chromium-browser typecatcher gimp calibre audacious nautilus-open-terminal mongodb-org sox nodejs -y
 
 sudo apt-get upgrade -y 
 
