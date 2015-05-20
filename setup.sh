@@ -20,7 +20,7 @@ sudo add-apt-repository ppa:n-muench/programs-ppa -y
 
 curl -sL https://deb.nodesource.com/setup | sudo bash -
 
-sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle qbittorrent typecatcher redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras arduino arduino-core arduino-mk sublime-text-installer synaptic spotify-client chromium-browser typecatcher gimp calibre audacious nautilus-open-terminal mongodb-org sox nodejs xclip gnome-shell-pomodoro -y
+sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle qbittorrent typecatcher redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras arduino arduino-core arduino-mk sublime-text-installer synaptic spotify-client chromium-browser typecatcher gimp calibre audacious nautilus-open-terminal mongodb-org sox nodejs xclip gnome-shell-pomodoro python-pip -y
 
 sudo apt-get upgrade -y 
 
