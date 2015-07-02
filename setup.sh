@@ -6,6 +6,9 @@ echo "net.ipv6.conf.all.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
 echo "net.ipv6.conf.default.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
 echo "net.ipv6.conf.lo.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
 
+# Configuring swappiness
+sudo bash -c "echo 'vm.swappiness = 5' >> /etc/sysctl.conf"
+
 # Adding useful repositories
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 sudo apt-add-repository -y "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen"
