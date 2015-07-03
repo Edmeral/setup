@@ -1,10 +1,10 @@
 #!/bin/bash 
 
 # Disable IPv6 (run "cat /proc/sys/net/ipv6/conf/all/disable_ipv6" to test: 1 => disabled)
-echo "#disable ipv6" | sudo tee -a /etc/sysctl.conf
-echo "net.ipv6.conf.all.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
-echo "net.ipv6.conf.default.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
-echo "net.ipv6.conf.lo.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
+sudo bash -c "echo '#disable ipv6' >> /etc/sysctl.conf"
+sudo bash -c "echo 'net.ipv6.conf.all.disable_ipv6 = 1' >> /etc/sysctl.conf"
+sudo bash -c "echo 'net.ipv6.conf.default.disable_ipv6 = 1' >> /etc/sysctl.conf"
+sudo bash -c "echo 'net.ipv6.conf.lo.disable_ipv6 = 1' >> /etc/sysctl.conf"
 
 # Configuring swappiness
 sudo bash -c "echo 'vm.swappiness = 5' >> /etc/sysctl.conf"
