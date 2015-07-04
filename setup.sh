@@ -10,8 +10,6 @@ sudo bash -c "echo 'net.ipv6.conf.lo.disable_ipv6 = 1' >> /etc/sysctl.conf"
 sudo bash -c "echo 'vm.swappiness = 5' >> /etc/sysctl.conf"
 
 # Adding useful repositories
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-sudo apt-add-repository -y "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen"
 sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 
 sudo add-apt-repository ppa:numix/ppa -y
@@ -23,7 +21,7 @@ sudo add-apt-repository ppa:n-muench/programs-ppa -y
 
 curl -sL https://deb.nodesource.com/setup | sudo bash -
 
-sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle qbittorrent typecatcher redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras arduino arduino-core arduino-mk sublime-text-installer synaptic spotify-client chromium-browser typecatcher gimp calibre audacious nautilus-open-terminal mongodb-org sox nodejs xclip gnome-shell-pomodoro python-pip gparted android-tools-fastboot android-tools-adb -y
+sudo apt-get install gdebi git numix-gtk-theme numix-icon-theme-circle qbittorrent typecatcher redshift synapse atom deluge curl zsh smplayer p7zip p7zip-full p7zip-rar ubuntu-restricted-extras arduino arduino-core arduino-mk sublime-text-installer synaptic spotify-client chromium-browser typecatcher gimp calibre audacious nautilus-open-terminal sox nodejs xclip gnome-shell-pomodoro python-pip gparted android-tools-fastboot android-tools-adb -y
 
 sudo apt-get upgrade -y 
 
